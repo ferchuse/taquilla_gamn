@@ -35,7 +35,7 @@
 	</script>
 	<body leftmargin=0 marginwidth=0 topmargin=0 marginheight=0 onload="cargar();">';
 	//Consumir el WS
-	$oSoapClient = new nusoap_client("http://gamn.agaribay.net/wsSincronizar.php?wsdl", true);	
+	$oSoapClient = new nusoap_client("http://gamn.mx/wsSincronizar.php?wsdl", true);	
 	$err = $oSoapClient->getError();
 	if($err!="")
 		echo "error1:".$err;
